@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Todo List App
 
 This is a simple **Todo List App** built with **React**.
@@ -60,3 +61,6 @@ Users can add tasks, complete them, undo completion, and delete tasks. The app a
 ## Author
 
 Made with React
+=======
+# todo-manager-react
+>>>>>>> 2a673f2b9f60dba68af918a9723f080fa83fa476
