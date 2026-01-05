@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Todo List App
 
 This is a simple **Todo List App** built with **React**.
