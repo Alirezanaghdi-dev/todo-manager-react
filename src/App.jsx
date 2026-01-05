@@ -1,10 +1,18 @@
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  const [todolist, setTodoList] = useState([]);
+  const [todolist, setTodoList] = useState(() => {
+    const saved = localStorage.getItem('todolist');
+    return saved ? JSON.parse(saved) : [];
+  });
+  
   const [newTask, setNewTask] = useState("");
+
+  useEffect(() => {
+    localStorage.setItem('todolist', JSON.stringify(todolist));
+  }, [todolist]);
 
   const handleChange = (event) => {
     setNewTask(event.target.value);
